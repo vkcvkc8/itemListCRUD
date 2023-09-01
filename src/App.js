@@ -50,7 +50,7 @@ export default function App() {
       <ul>
         {items.map((item, index) => (
           <li key={index}>
-            {item}
+           {index + 1}. {item}
             <button onClick={() => editItem(index)}>Edit</button>
             <button onClick={() => deleteItem(index)}>Delete</button>
           </li>
